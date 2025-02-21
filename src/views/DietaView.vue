@@ -4,18 +4,20 @@
         <DietForm :dieta="dieta" @calculate="handleCalculation" />
 
         <DietResult v-if="results" :results="results" />
+        <CalcuDetails v-if="results" :results="results" />
     </div>
 </template>
 
 <script>
 import DietForm from "../components/DietFrom.vue";
 import DietResult from "../components/DietResults.vue";
+import CalcuDetails from "../components/CalcuDetails.vue";
 import param from "../data/parameters.js";
 
 export default {
     name: "DietaView",
     props: ["dieta_name"],
-    components: { DietForm, DietResult },
+    components: { DietForm, DietResult, CalcuDetails },
     data() {
         return {
             dieta: {},
