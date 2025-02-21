@@ -1,13 +1,13 @@
 <script>
 import Navbar from "./components/partials/Navbar.vue";
 
+
 export default {
   components: {
-    Navbar,
+    Navbar
   },
 };
 </script>
-
 
 <template>
   <div id="app">
@@ -16,7 +16,7 @@ export default {
   </div>
 </template>
 
-
 <style>
+
 
 </style>
