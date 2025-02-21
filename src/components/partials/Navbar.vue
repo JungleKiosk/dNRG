@@ -11,7 +11,7 @@ export default {
 
 
 <template>
-    <nav class="navbar">
+    <nav class="navbar justify-content-center">
         <ul>
             <li><router-link to="/">Home</router-link></li>
             <li><router-link to="/parameters">Parameters</router-link></li>

@@ -1,6 +1,6 @@
 <template>
     <div class="theme-toggle">
-        <button @click="toggleTheme" class="theme-button">
+        <button @click="toggleTheme" class="theme-button rounded-5">
             {{ isDarkMode ? '🌞 Light Mode' : '🌙 Dark Mode' }}
         </button>
     </div>
@@ -41,27 +41,6 @@ export default {
 </script>
 
 <style scoped>
-.theme-button {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-.theme-button:hover {
-    background-color: #34495e;
-}
 
-body.dark-mode .theme-button {
-    background-color: #ecf0f1;
-    color: #2c3e50;
-}
-
-body.dark-mode .theme-button:hover {
-    background-color: #bdc3c7;
-}
 </style>

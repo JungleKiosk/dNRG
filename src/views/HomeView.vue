@@ -1,5 +1,10 @@
 <script>
+import BiogasInfo from "../components/HomeReadMore.vue";
+
 export default {
+  components: {
+    BiogasInfo,
+  },
   name: "HomeView",
   data() {
     return {
@@ -23,7 +28,7 @@ export default {
         <h4>Calcola il dimensionamento aziendale per un impianto a Biogas.</h4>
         <h5>Scegli la dieta per l'impianto Biogas, inserisci le quantità e avrai subito il risultato e il relativo processo di calcolo.</h5>
         <br>
-        <a class="btn btn_st" href="#read_more">Scopri di più</a>
+        <a class="btn btn_blulight" href="#read_more">Scopri di più</a>
         <br>
       </div>
     </div>
@@ -39,10 +44,12 @@ export default {
             <li v-for="(componente, idx) in dieta.componenti" :key="idx">{{ componente }}</li>
           </ul>
           <div class="p-2">
-            <router-link :to="`/dieta/${dieta.slug}`" class="btn btn_st mt-3">Vai a {{ dieta.nome }}</router-link>
+            <router-link :to="`/dieta/${dieta.slug}`" class="btn btn_blulight fw-bold mt-3">Calcola {{ dieta.nome }}</router-link>
           </div>
         </div>
       </div>
+
+      <BiogasInfo />
 
     </div>
   </div>

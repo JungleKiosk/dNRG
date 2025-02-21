@@ -1,9 +1,16 @@
+<script>
+export default {
+    name: "CalculationDetails",
+    props: ["results"],
+};
+</script>
+
 <template>
     <div class="calculation-details mt-5">
         <h1>Dimensionamento aziendale</h1>
         <h3>Processo di calcolo:</h3>
         <p>
-            L'algoritmo è calibrato su <router-link to="/parameters">specifiche di progetto</router-link> <a class="a_dark" href="/tabulati">specifiche di progetto</a>, con
+            L'algoritmo è calibrato su <router-link to="/parameters">specifiche di progetto</router-link>, con
             obiettivo finale di produrre un megawatt ora al giorno (commissione progettuale). Saranno quindi utilizzati
             i parametri riportati nei <a class="a_dark" href="/tabulati">tabulati</a> per la stima del dimensionamento
             aziendale.
@@ -11,7 +18,7 @@
             e <strong>la superficie a coltura energetica</strong> dedicata a Biogas.
         </p>
 
-        <div class="formula-box">
+        <div class="formula_box">
             <p>
                 <strong>E_el = P x 24 [kW x (ore/giorno)]</strong><br><br>
                 E_el = 1000 x 24 = <span>{{ results.E_el }}</span> [kW/giorno]<br><br>
@@ -21,7 +28,7 @@
 
         <p>Calcolo del metano totale [M_ch4_tot] necessario:</p>
 
-        <div class="formula-box">
+        <div class="formula_box">
             <p>
                 <strong>M_ch4_tot = E_el / (H1 x n) [(kWh/giorno) / (kWh/Nm³)]</strong><br><br>
                 M_ch4_tot = {{ results.E_el }} / (10 x 0.45) = <span>{{ results.M_ch4_tot }}</span> [Nm³/giorno]<br><br>
@@ -32,7 +39,7 @@
 
         <p>Stima del Biogas totale [M_B_tot] per la dieta selezionata:</p>
 
-        <div class="formula-box">
+        <div class="formula_box">
             <p>
                 <strong>M_B_tot = M_ch4_tot / [(phi_animal x Pg_animal x C_CH4_animal) + (phi_crop x Pg_crop x
                     C_CH4_crop) + (phi_waste x Pg_waste x C_CH4_waste)]</strong><br><br>
@@ -142,21 +149,21 @@
                         <td>{{ results.debug_info.phi_LS }} x {{ results.debug_info.Pg_LS }} x {{
                             results.debug_info.C_CH4_LS }}</td>
                         <td>{{ results.debug_info['phi_LS * Pg_LS * C_CH4_LS']
-                            }}</td>
+                        }}</td>
                     </tr>
                     <tr>
                         <td>phi_crop x Pg_crop x C_CH4_crop</td>
                         <td>{{ results.debug_info.phi_IT }} x {{ results.debug_info.Pg_IT }} x {{
                             results.debug_info.C_CH4_IT }}</td>
                         <td>{{ results.debug_info['phi_IT * Pg_IT * C_CH4_IT']
-                            }}</td>
+                        }}</td>
                     </tr>
                     <tr>
                         <td>phi_waste x Pg_waste x C_CH4_waste</td>
                         <td>{{ results.debug_info.phi_SF }} x {{ results.debug_info.Pg_SF }} x {{
                             results.debug_info.C_CH4_SF }}</td>
                         <td>{{ results.debug_info['phi_SF * Pg_SF * C_CH4_SF']
-                            }}</td>
+                        }}</td>
                     </tr>
                     <tr>
                         <td><strong>M_B_tot_denominatore</strong></td>
@@ -177,20 +184,21 @@
                 quantità necessarie alla <span>{{ results.debug_info.dieta }}</span>.
             </p>
 
-            <div class="formula-box">
+            <div class="formula_box">
                 <p>
                     <strong>M_B_crop = phi_crop x M_B_tot</strong> [tonn/giorno]<br>
                     <strong>M_B_animal = phi_animal x M_B_tot</strong> [tonn/giorno]<br><br>
                     M_B_crop = <span>{{ results.debug_info.phi_crop }}</span> x <span>{{ results.debug_info.M_B_tot
-                        }}</span> [tonn/giorno]<br>
+                    }}</span> [tonn/giorno]<br>
                     M_B_animal = <span>{{ results.debug_info.phi_animal }}</span> x <span>{{ results.debug_info.M_B_tot
-                        }}</span> [tonn/giorno]
+                    }}</span> [tonn/giorno]
                 </p>
             </div>
 
+
             <p>Calcolo dei giorni di funzionamento dell'impianto a Biogas:</p>
 
-            <div class="formula-box">
+            <div class="formula_box">
                 <p>
                     <strong>N = T/24</strong> [(h/anno) / (h/giorno)] <br><br>
                     N = 8040 / 24 = 335 [giorni/anno]<br>
@@ -221,11 +229,11 @@
         <!-- Superficie coltivata e numero di capi -->
         <p>Ora si passa alla stima della superficie da destinare alla coltura energetica:</p>
 
-        <div class="formula-box">
+        <div class="formula_box">
             <p>
                 <strong>S_crop = (M_B_crop x N) / r</strong><br>
                 S_crop = ({{ results.M_B_IT }} x 335) / {{ results.debug_info.resa_IT }} = <span>{{ results.S_IT
-                }}</span> ha<br><br>
+                    }}</span> ha<br><br>
 
                 <strong>A_capi = (M_B_animal x N) / (p_m x ρ x m_c)</strong><br>
                 A_capi = ({{ results.M_B_LS }} x 335) / ({{ results.debug_info.p_m }} x {{ results.debug_info.rho }}
@@ -237,7 +245,7 @@
             <!-- Calcolo numero capi necessari -->
             <p>Infine, si stima il numero di capi necessari per ottenere la produzione di refluo zootecnico:</p>
 
-            <div class="formula-box">
+            <div class="formula_box">
                 <p>
                     <strong>A_capi = (M_B_animal x N) / (p_m x ρ x m_c)</strong> <br>
                     {(tonn/anno) / [(m³/(tonn_pesovivo x anno)) x (tonn/m³) x (tonn_pesovivo/capo)]}
@@ -298,32 +306,7 @@
 
 </template>
 
-<script>
-export default {
-    name: "CalculationDetails",
-    props: ["results"],
-};
-</script>
 
 <style scoped>
-.formula-box {
-    background-color: #f9f9f9;
-    border-left: 5px solid #007bff;
-    padding: 15px;
-    margin-bottom: 20px;
-}
 
-.small {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.table-responsive {
-    margin-top: 20px;
-}
-
-.table th,
-.table td {
-    text-align: center;
-}
 </style>
