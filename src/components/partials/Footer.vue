@@ -5,7 +5,7 @@
 
 
 <template>
-  <footer id="footer" class="p-5 bg-dark">
+  <footer id="footer" class="p-5 bg-dark container-fluid">
     <div class="row justify-content-center mt-5">
 
       <div class="col-sm-4 col-md-3 text-center">
@@ -20,21 +20,26 @@
 
     </div>
 
-    <div class="row justify-content-center mt-5">
-
-
+    <div class="row justify-content-center mt-3">
       <div class="col-12 col-lg-2 text-center">
         <h5>Contacts</h5>
-
         <span>+39 3311874661</span> <br>
         <span>eso.fra24@gmail.com</span>
-        
       </div>
-
     </div>
+
+    <div class="row justify-content-center text-center mt-3">
+      <div class="col-12">
+        <span>Tnks for img to:</span>
+        <br>
+        <a href="https://pixabay.com/it/users/stokpic-692575/">stokpic</a>
+        <br>
+        <a href="https://www.svgrepo.com/svg/10904/power">SVGrepo</a>
+      </div>
+    </div>
+
+
   </footer>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

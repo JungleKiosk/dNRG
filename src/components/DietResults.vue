@@ -1,5 +1,5 @@
 <template>
-    <div class="results mt-5">
+    <div class="results mt-5 p-3">
         <h2>Risultati:</h2>
 
         <div v-if="results.warning_message" class="alert alert-warning">
@@ -69,8 +69,8 @@
             </tbody>
         </table>
 
-        <h3 class="mt-5">Valori di Debug:</h3>
-        <pre>{{ results.debug_info }}</pre>
+<!--         <h3 class="mt-5">Valori di Debug:</h3>
+        <pre>{{ results.debug_info }}</pre> -->
     </div>
 </template>
 

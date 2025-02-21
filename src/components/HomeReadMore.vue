@@ -6,9 +6,9 @@ export default {
 
 
 <template>
-    <div class="container">
+    <div id="read_more"  class="container">
         <!-- Introduzione e Specifiche di progetto -->
-        <div id="read_more" class="row m-5">
+        <div class="row m-5">
             <h1>Specifiche di progetto</h1>
             <div class="col-12">
                 <p>

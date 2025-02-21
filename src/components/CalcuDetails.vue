@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div class="calculation-details mt-5">
+    <div class="calculation-details mt-5 p-3">
         <h1>Dimensionamento aziendale</h1>
         <h3>Processo di calcolo:</h3>
         <p>

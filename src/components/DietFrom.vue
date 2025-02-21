@@ -19,21 +19,26 @@ export default {
 </script>
 
 <template>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-6 col-lg-3">
+    <div style="height: 500px;" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-3 rounded-3 fw-bold align-content-center">
                 <form @submit.prevent="calculate">
                     <div v-for="(limiti, ingrediente) in dieta" :key="ingrediente" class="form-group">
                         <label :for="ingrediente">
                             {{ formatIngredientName(ingrediente) }} ({{ limiti[0] }}% - {{ limiti[1] }}%)
                         </label>
-                        <input type="number" :id="ingrediente" v-model.number="inputValues[ingrediente]" :min="limiti[0]"
-                            :max="limiti[1]" required class="form-control" />
+                        <input type="number" :id="ingrediente" v-model.number="inputValues[ingrediente]"
+                            :min="limiti[0]" :max="limiti[1]" required class="form-control" />
                     </div>
-                    <button type="submit" class="btn btn_blulight fw-bold mt-3">Calcola</button>
+                    <button type="submit" class="btn btn_blulight fw-bold m-3">Calcola</button>
 
                 </form>
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+                <img class=" rounded-3" src="../assets/img/tunder.svg" alt="">
             </div>
         </div>
     </div>
 </template>
+
+<style scoped></style>

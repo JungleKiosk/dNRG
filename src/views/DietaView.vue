@@ -1,10 +1,18 @@
 <template>
-    <div style="height: 500px;" class="container mt-5">
-        <h1>{{ dietaTitle }}</h1>
-        <DietForm :dieta="dieta" @calculate="handleCalculation" />
-        <DietResult v-if="results" :results="results" />
-        <CalcuDetails v-if="results" :results="results" />
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 mb-5">
+                <div class="mb-5">
+                    <h1 class="mt-5">{{ dietaTitle }}</h1>
+                    <DietForm :dieta="dieta" @calculate="handleCalculation" />
+                    <DietResult v-if="results" :results="results" />
+                    <CalcuDetails v-if="results" :results="results" />
+                </div>
+            </div>
+        </div>
     </div>
+
 </template>
 
 <script>
