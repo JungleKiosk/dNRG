@@ -3,7 +3,7 @@
         <h1>Dimensionamento aziendale</h1>
         <h3>Processo di calcolo:</h3>
         <p>
-            L'algoritmo è calibrato su <a class="a_dark" href="/tabulati">specifiche di progetto</a>, con
+            L'algoritmo è calibrato su <router-link to="/parameters">specifiche di progetto</router-link> <a class="a_dark" href="/tabulati">specifiche di progetto</a>, con
             obiettivo finale di produrre un megawatt ora al giorno (commissione progettuale). Saranno quindi utilizzati
             i parametri riportati nei <a class="a_dark" href="/tabulati">tabulati</a> per la stima del dimensionamento
             aziendale.
