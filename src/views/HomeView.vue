@@ -22,7 +22,7 @@ export default {
 
 <template>
   <div class="container">
-    <div class="row mt-5">
+    <div class="row mt-5 justify-content-center">
       <div class="col-12 col-lg-8 p-3">
         <h1 class="display-1">bioNRG🌳</h1>
         <br>
@@ -32,7 +32,7 @@ export default {
         <a class="btn btn_blulight" href="#read_more">Scopri di più</a>
         <br>
       </div>
-      <div class="col-12 col-lg-4 text-center">
+      <div class="col-3 col-lg-4">
         <img class=" rounded-3" src="../assets/img/tunder.svg" alt="">
       </div>
     </div>
