@@ -428,8 +428,8 @@ const messages = {
 };
 
 const i18n = createI18n({
-  locale: localStorage.getItem("language") || "it", // Lingua predefinita
-  fallbackLocale: "it",
+  locale: localStorage.getItem("language") || "en",
+  fallbackLocale: "en",
   messages,
 });
 
