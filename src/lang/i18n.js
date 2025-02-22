@@ -134,7 +134,7 @@ const messages = {
       siero_latte: "Siero di Latte",
       scarti_frutta: "Scarti di Frutta",
       sansa_olive: "Sansa di Olive",
-      scarti_patata: "Scarti di Patata"
+      scarti_patata: "Scarti di Patata",
     },
     results_table: {
       title: "Risultati al Denominatore",
@@ -148,27 +148,33 @@ const messages = {
     },
     biomass: {
       total_biomass: "La biomassa totale è di",
-      total_biomass2: "tonnellate al giorno, rientra nel vincolo di progetto (40 e le 70 tonnellate al giorno). Si procede con il calcolo della superficie coperta dalla coltura dedicata (relativa alla {diet} scelta) e il calcolo dei capi da allevare per ottenere le quantità necessarie alla dieta scelta.",
+      total_biomass2:
+        "tonnellate al giorno, rientra nel vincolo di progetto (40 e le 70 tonnellate al giorno). Si procede con il calcolo della superficie coperta dalla coltura dedicata (relativa alla {diet} scelta) e il calcolo dei capi da allevare per ottenere le quantità necessarie alla dieta scelta.",
       formula_crop: "M_B_crop = phi_crop x M_B_tot",
       formula_animal: "M_B_animal = phi_animal x M_B_tot",
       calc_crop: "M_B_crop = {phi_crop} x {M_B_tot}",
       calc_animal: "M_B_animal = {phi_animal} x {M_B_tot}",
-      operating_days: "Calcolo dei giorni di funzionamento dell'impianto a Biogas:",
+      operating_days:
+        "Calcolo dei giorni di funzionamento dell'impianto a Biogas:",
       note: "NOTA! Il resto dei giorni dell'anno serviranno per la manutenzione dell'impianto e bruciare i gas in eccesso.",
-      torch_description: "Le torce sono necessarie come misura di sicurezza e di tutela ambientale per bruciare eccedenze di biogas.",
-      torch_goal: "Obiettivo: massimizzare la combustione e ridurre il rilascio in atmosfera.",
+      torch_description:
+        "Le torce sono necessarie come misura di sicurezza e di tutela ambientale per bruciare eccedenze di biogas.",
+      torch_goal:
+        "Obiettivo: massimizzare la combustione e ridurre il rilascio in atmosfera.",
       torch_ground_distance: "Distanza minima dal suolo: 4 m.",
-      torch_residence_distance: "Distanza minima da aree abitate: 5 m."
+      torch_residence_distance: "Distanza minima da aree abitate: 5 m.",
     },
     units: {
       ton_day: "tonn/giorno",
-      days_year: "giorni/anno"
+      days_year: "giorni/anno",
     },
     surface_estimation: {
-      intro: "Ora si passa alla stima della superficie da destinare alla coltura energetica:",
+      intro:
+        "Ora si passa alla stima della superficie da destinare alla coltura energetica:",
     },
     livestock_estimation: {
-      intro: "Infine, si stima il numero di capi necessari per ottenere la produzione di refluo zootecnico:",
+      intro:
+        "Infine, si stima il numero di capi necessari per ottenere la produzione di refluo zootecnico:",
     },
     diet_parameters: {
       title: "Parametri della Dieta:",
@@ -179,31 +185,37 @@ const messages = {
       yield: "Resa Colturale",
       waste_production: "Produzione di reflui",
       density: "Densità media refluo",
-      waste_per_head: "Quantità di refluo per capo"
+      waste_per_head: "Quantità di refluo per capo",
     },
     tabulati: {
       title: "Tabulati",
       project_specs: "Specifiche di Progetto",
-      metanigeno: "Potenziale Metanigeno",
-      crop_yield: "Resa Colturali Medie",
-      waste_productivity: "Produttività Reflui",
       parameter: "Parametro",
       symbol: "Simbolo",
       value: "Valore",
       unit: "UdM",
+      metanigeno: "Potenziale Metanigeno",
       biomass: "Biomassa",
       potential_biogas: "Potenziale prod. Biogas [Nm³/ton_biomassa]",
       ch4_content: "Contenuto di CH4 nel Biogas [% in volume]",
+      crop_yield: "Resa Colturali Medie",
       energy_crop: "Coltura Energetica",
       crop_yield_value: "Resa (r) [ton/(ha x anno)]",
       density: "Densità media biomassa [ton/m³]",
+      waste_productivity: "Produttività Reflui",
       waste: "Reflui",
       waste_prod: "Prod. del refluo (p_m) [ton/(ha x anno)]",
-      live_weight: "Peso vivo (m_c) [ton_pesovivo/capo]",
+      live_weight: "Peso vivo (m_c) [ton_pespvivo/capo]",
       biomass_density: "Densità media biomassa (rho) [ton/m³]",
-
-
-    }
+    },
+    parameters_view: {
+      Potenza: "Potenza",
+      h_func: "Ore di funzionamento annuo",
+      elettric_rend: "Rendimento elettrico",
+      Pot_CH4: "Potere Calorifero Inferiore CH4",
+      Cont_CH4: "Contenuto CH4 nel Biogas",
+      Carico_med_gg: "Carico Medio Giornaliero"
+    },
   },
   /* ************************************ */
   /* ******  ENGLISH ********************* */
@@ -333,7 +345,7 @@ const messages = {
       siero_latte: "Whey",
       scarti_frutta: "Fruit Waste",
       sansa_olive: "Olive Pomace",
-      scarti_patata: "Potato Waste"
+      scarti_patata: "Potato Waste",
     },
     results_table: {
       title: "Denominator Results",
@@ -343,31 +355,34 @@ const messages = {
       animal_formula: "phi_animal x Pg_animal x C_CH4_animal",
       crop_formula: "phi_crop x Pg_crop x C_CH4_crop",
       waste_formula: "phi_waste x Pg_waste x C_CH4_waste",
-      total_denominator: "M_B_tot_denominator"
+      total_denominator: "M_B_tot_denominator",
     },
     biomass: {
       total_biomass: "The total biomass is",
-      total_biomass2: "tons per day, falls within the design constraint (40 and 70 tons per day). We proceed with the calculation of the area covered by the dedicated crop (relative to the {diet} chosen) and the calculation of the animals to be raised to obtain the quantities needed for the chosen diet.",
+      total_biomass2:
+        "tons per day, falls within the design constraint (40 and 70 tons per day). We proceed with the calculation of the area covered by the dedicated crop (relative to the {diet} chosen) and the calculation of the animals to be raised to obtain the quantities needed for the chosen diet.",
       formula_crop: "M_B_crop = phi_crop x M_B_tot",
       formula_animal: "M_B_animal = phi_animal x M_B_tot",
       calc_crop: "M_B_crop = {phi_crop} x {M_B_tot}",
       calc_animal: "M_B_animal = {phi_animal} x {M_B_tot}",
       operating_days: "Calculation of the Biogas plant operating days:",
       note: "NOTE! The remaining days of the year will be used for plant maintenance and burning excess gas.",
-      torch_description: "The torches are necessary as a safety and environmental protection measure to burn excess biogas.",
+      torch_description:
+        "The torches are necessary as a safety and environmental protection measure to burn excess biogas.",
       torch_goal: "Goal: maximize combustion and reduce atmospheric release.",
       torch_ground_distance: "Minimum distance from the ground: 4 m.",
-      torch_residence_distance: "Minimum distance from residential areas: 5 m."
+      torch_residence_distance: "Minimum distance from residential areas: 5 m.",
     },
     units: {
       ton_day: "tons/day",
-      days_year: "days/year"
+      days_year: "days/year",
     },
     surface_estimation: {
-      intro: "Now let's estimate the area to be allocated to energy crops:"
+      intro: "Now let's estimate the area to be allocated to energy crops:",
     },
     livestock_estimation: {
-      intro: "Finally, the number of livestock required to produce zootechnical waste is estimated:"
+      intro:
+        "Finally, the number of livestock required to produce zootechnical waste is estimated:",
     },
     diet_parameters: {
       title: "Diet Parameters:",
@@ -378,29 +393,37 @@ const messages = {
       yield: "Crop Yield",
       waste_production: "Waste Production",
       density: "Average Waste Density",
-      waste_per_head: "Waste per Head"
+      waste_per_head: "Waste per Head",
     },
     tabulati: {
       title: "Tables",
       project_specs: "Project Specifications",
-      metanigeno: "Methanogenic Potential",
-      crop_yield: "Average Crop Yields",
-      waste_productivity: "Waste Productivity",
       parameter: "Parameter",
       symbol: "Symbol",
       value: "Value",
       unit: "Unit",
+      metanigeno: "Methanogenic Potential",
       biomass: "Biomass",
-      potential_biogas: "Biogas Potential [Nm³/ton_biomass]",
+      potential_biogas: "Biogas Production Potential [Nm³/ton_biomass]",
       ch4_content: "CH4 Content in Biogas [% by volume]",
+      crop_yield: "Average Crop Yield",
       energy_crop: "Energy Crop",
       crop_yield_value: "Yield (r) [ton/(ha x year)]",
-      density: "Average biomass density [ton/m³]",
+      density: "Average Biomass Density [ton/m³]",
+      waste_productivity: "Waste Productivity",
       waste: "Waste",
-      waste_prod: "Waste production (p_m) [ton/(ha x year)]",
-      live_weight: "Live weight (m_c) [ton_liveweight/head]",
-      biomass_density: "Average biomass density (rho) [ton/m³]",
-    }
+      waste_prod: "Waste Production (p_m) [ton/(ha x year)]",
+      live_weight: "Live Weight (m_c) [ton_live_weight/head]",
+      biomass_density: "Average Biomass Density (rho) [ton/m³]",
+    },
+    parameters_view: {
+      Potenza: "Power",
+      h_func: "Annual Operating Hours",
+      elettric_rend: "Electrical Efficiency",
+      Pot_CH4: "Lower Heating Value CH4",
+      Cont_CH4: "CH4 Content in Biogas",
+      Carico_med_gg: "Average Daily Load",
+    },
   },
 };
 
