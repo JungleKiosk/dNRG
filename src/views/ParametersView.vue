@@ -2,18 +2,18 @@
   <div class="container">
     <!-- Titolo -->
     <div class="row mt-5">
-      <h1>Tabulati</h1>
+      <h1>{{ $t('tabulati.title') }}</h1>
       <div class="col-12 col-lg-8">
         <!-- Specifiche di Progetto -->
-        <h2 class="mt-5">Specifiche di Progetto</h2>
+        <h2 class="mt-5">{{ $t('tabulati.project_specs') }}</h2>
         <div class="table-responsive">
           <table class="table table-striped">
             <thead>
               <tr>
-                <th>Parametro</th>
-                <th>Simbolo</th>
-                <th>Valore</th>
-                <th>UdM</th>
+                <th>{{ $t('tabulati.parameter') }}</th>
+                <th>{{ $t('tabulati.symbol') }}</th>
+                <th>{{ $t('tabulati.value') }}</th>
+                <th>{{ $t('tabulati.unit') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -35,14 +35,14 @@
     <!-- Potenziale Metanigeno -->
     <div class="row">
       <div class="col-12 col-lg-8">
-        <h2 id="tabulati_pm" class="mt-5">Potenziale Metanigeno</h2>
+        <h2 id="tabulati_pm" class="mt-5">{{ $t('tabulati.metanigeno') }}</h2>
         <div class="table-responsive">
           <table class="table table-striped text-center">
             <thead>
               <tr>
-                <th>Biomassa</th>
-                <th>Potenziale prod. Biogas [Nm³/ton_biomassa]</th>
-                <th>Contenuto di CH4 nel Biogas [% in volume]</th>
+                <th>{{ $t('tabulati.biomass') }}</th>
+                <th>{{ $t('tabulati.potential_biogas') }}</th>
+                <th>{{ $t('tabulati.ch4_content') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -60,14 +60,14 @@
     <!-- Resa Colturali medie -->
     <div class="row">
       <div class="col-12 col-lg-8">
-        <h2 class="mt-5">Resa Colturali Medie</h2>
+        <h2 class="mt-5">{{ $t('tabulati.crop_yield') }}</h2>
         <div class="table-responsive">
           <table class="table table-striped text-center">
             <thead>
               <tr>
-                <th>Coltura Energetica</th>
-                <th>Resa (r) [ton/(ha x anno)]</th>
-                <th>Densità media biomassa [ton/m³]</th>
+                <th>{{ $t('tabulati.energy_crop') }}</th>
+                <th>{{ $t('tabulati.crop_yield_value') }}</th>
+                <th>{{ $t('tabulati.density') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -85,15 +85,15 @@
     <!-- Produttività Reflui -->
     <div class="row">
       <div class="col-12 col-lg-8">
-        <h2 class="mt-5">Produttività Reflui</h2>
+        <h2 class="mt-5">{{ $t('tabulati.waste_productivity') }}</h2>
         <div class="table-responsive">
           <table class="table table-striped text-center">
             <thead>
               <tr>
-                <th>Reflui</th>
-                <th>Prod. del refluo (p_m) [ton/(ha x anno)]</th>
-                <th>Peso vivo (m_c) [ton_pespvivo/capo]</th>
-                <th>Densità media biomassa (rho) [ton/m³]</th>
+                <th>{{ $t('tabulati.waste') }}</th>
+                <th>{{ $t('tabulati.waste_prod') }}</th>
+                <th>{{ $t('tabulati.live_weight') }}</th>
+                <th>{{ $t('tabulati.biomass_density') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -121,7 +121,7 @@ export default {
         { parametro: "Ore di funzionamento annuo", simbolo: "T", valore: "8040", udm: "ore/annue" },
         { parametro: "Rendimento elettrico", simbolo: "n", valore: "45", udm: "%" },
         { parametro: "Potere Calorifero Inferiore CH4", simbolo: "H1", valore: "10", udm: "kWh/Nm³" },
-        { parametro: "Contenuto CH4 nel Biogas", simbolo: "M_ch4_tot", valore: "vedi tabulato", link: "#tabulati_pm", udm: "% in volume" },
+        { parametro: "Contenuto CH4 nel Biogas", simbolo: "M_ch4_tot", valore: "(colNextTab)", link: "#tabulati_pm", udm: "% in volume" },
         { parametro: "Carico Medio Giornaliero", simbolo: "M_B_tot", valore: "40 ~ 70", udm: "ton/giorno" },
       ],
 

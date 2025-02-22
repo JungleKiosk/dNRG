@@ -7,7 +7,7 @@ const messages = {
       parameters: "Parametri",
     },
     home: {
-      title: "Benvenuto su bioNRG🌳",
+      title: "bioNRG🌳",
       description:
         "Calcola il dimensionamento aziendale per un impianto a Biogas.",
       instruction:
@@ -166,6 +166,27 @@ const messages = {
       waste_production: "Produzione di reflui",
       density: "Densità media refluo",
       waste_per_head: "Quantità di refluo per capo"
+    },
+    tabulati: {
+      title: "Tabulati",
+      project_specs: "Specifiche di Progetto",
+      metanigeno: "Potenziale Metanigeno",
+      crop_yield: "Resa Colturali Medie",
+      waste_productivity: "Produttività Reflui",
+      parameter: "Parametro",
+      symbol: "Simbolo",
+      value: "Valore",
+      unit: "UdM",
+      biomass: "Biomassa",
+      potential_biogas: "Potenziale prod. Biogas [Nm³/ton_biomassa]",
+      ch4_content: "Contenuto di CH4 nel Biogas [% in volume]",
+      energy_crop: "Coltura Energetica",
+      crop_yield_value: "Resa (r) [ton/(ha x anno)]",
+      density: "Densità media biomassa [ton/m³]",
+      waste: "Reflui",
+      waste_prod: "Prod. del refluo (p_m) [ton/(ha x anno)]",
+      live_weight: "Peso vivo (m_c) [ton_pesovivo/capo]",
+      biomass_density: "Densità media biomassa (rho) [ton/m³]",
     }
   },
   /* ************************************ */
@@ -177,7 +198,7 @@ const messages = {
       parameters: "Parameters",
     },
     home: {
-      title: "Welcome to bioNRG🌳",
+      title: "bioNRG🌳",
       description: "Calculate the company sizing for a Biogas plant.",
       instruction:
         "Choose the diet for the Biogas plant, enter the quantities, and get the result along with the calculation process.",
@@ -328,6 +349,27 @@ const messages = {
       waste_production: "Waste Production",
       density: "Average Waste Density",
       waste_per_head: "Waste per Head"
+    },
+    tabulati: {
+      title: "Tables",
+      project_specs: "Project Specifications",
+      metanigeno: "Methanogenic Potential",
+      crop_yield: "Average Crop Yields",
+      waste_productivity: "Waste Productivity",
+      parameter: "Parameter",
+      symbol: "Symbol",
+      value: "Value",
+      unit: "Unit",
+      biomass: "Biomass",
+      potential_biogas: "Biogas Potential [Nm³/ton_biomass]",
+      ch4_content: "CH4 Content in Biogas [% by volume]",
+      energy_crop: "Energy Crop",
+      crop_yield_value: "Yield (r) [ton/(ha x year)]",
+      density: "Average biomass density [ton/m³]",
+      waste: "Waste",
+      waste_prod: "Waste production (p_m) [ton/(ha x year)]",
+      live_weight: "Live weight (m_c) [ton_liveweight/head]",
+      biomass_density: "Average biomass density (rho) [ton/m³]",
     }
   },
 };
