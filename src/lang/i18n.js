@@ -2,6 +2,10 @@ import { createI18n } from 'vue-i18n';
 
 const messages = {
   it: {
+    navbar:{
+      home: 'Home',
+      parameters: 'Parametri'
+    },
     home: {
       title: 'Benvenuto su bioNRG🌳',
       description: 'Calcola il dimensionamento aziendale per un impianto a Biogas.',
@@ -52,6 +56,10 @@ const messages = {
     }
   },
   en: {
+    navbar:{
+      home: 'Home',
+      parameters: 'Parameters'
+    },
     home: {
       title: 'Welcome to bioNRG🌳',
       description: 'Calculate the company sizing for a Biogas plant.',
