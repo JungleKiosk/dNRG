@@ -1,7 +1,7 @@
 <template>
     <div class="theme-toggle">
         <button @click="toggleTheme" class="theme-button rounded-5">
-            {{ isDarkMode ? '🌞 Light Mode' : '🌙 Dark Mode' }}
+            {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
         </button>
     </div>
 </template>
