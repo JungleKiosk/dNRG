@@ -100,7 +100,7 @@ export default {
                     C_CH4_LS,
                     C_CH4_IT,
                     C_CH4_SF,
-                    M_B_tot_denominator,
+                    M_B_tot_denominator
                 },
             };
         },

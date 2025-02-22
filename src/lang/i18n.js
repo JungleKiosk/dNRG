@@ -1,61 +1,79 @@
-import { createI18n } from 'vue-i18n';
+import { createI18n } from "vue-i18n";
 
 const messages = {
   it: {
-    navbar:{
-      home: 'Home',
-      parameters: 'Parametri'
+    navbar: {
+      home: "Home",
+      parameters: "Parametri",
     },
     home: {
-      title: 'Benvenuto su bioNRG🌳',
-      description: 'Calcola il dimensionamento aziendale per un impianto a Biogas.',
-      instruction: 'Scegli la dieta per l\'impianto Biogas, inserisci le quantità e avrai subito il risultato e il relativo processo di calcolo.',
-      learn_more: 'Scopri di più',
-      choose_diet: 'Scegli la Dieta per il tuo Impianto Biogas',
-      composition_limits: 'Limiti di Composizione',
-      calculate: 'Calcola',
+      title: "Benvenuto su bioNRG🌳",
+      description:
+        "Calcola il dimensionamento aziendale per un impianto a Biogas.",
+      instruction:
+        "Scegli la dieta per l'impianto Biogas, inserisci le quantità e avrai subito il risultato e il relativo processo di calcolo.",
+      learn_more: "Scopri di più",
+      choose_diet: "Scegli la Dieta per il tuo Impianto Biogas",
+      composition_limits: "Limiti di Composizione",
+      calculate: "Calcola",
     },
     biogasInfo: {
       projectTitle: "Specifiche di progetto",
-      projectDescription: "Le specifiche di progetto dell'impianto sono state fissate per garantire la produzione di 1 MW (1000 kW), con un carico medio di biomassa compreso tra 40 e 70 t/giorno. Questo dato fondamentale servirà per l'elaborazione del dimensionamento aziendale. Vai ai",
+      projectDescription:
+        "Le specifiche di progetto dell'impianto sono state fissate per garantire la produzione di 1 MW (1000 kW), con un carico medio di biomassa compreso tra 40 e 70 t/giorno. Questo dato fondamentale servirà per l'elaborazione del dimensionamento aziendale. Vai ai",
       tables: "Tabulati",
-      mapDescription: "Di seguito la mappatura aggiornata al 2022 degli impianti per la produzione di Metano.",
+      mapDescription:
+        "Di seguito la mappatura aggiornata al 2022 degli impianti per la produzione di Metano.",
       openMap: "Apri la mappa",
       whatIsBiogas: "Che cosa è il Biogas?",
-      biogasDescription1: "Il termine 'biogas' si riferisce a un combustibile gassoso naturale, costituito principalmente da metano e anidride carbonica.",
-      biogasDescription2: "Il biogas viene generato tramite digestione anaerobica di biomasse.",
+      biogasDescription1:
+        "Il termine 'biogas' si riferisce a un combustibile gassoso naturale, costituito principalmente da metano e anidride carbonica.",
+      biogasDescription2:
+        "Il biogas viene generato tramite digestione anaerobica di biomasse.",
       biogasHandbook: "Handbook Biogas",
       practiceManual: "Manuale Pratico",
       legalFramework: "Quadro normativo",
-      legalDescription: "Si parla di incentivazione di biogas e gas derivante dalla biomassa con la direttiva 2009/73/CE.",
+      legalDescription:
+        "Si parla di incentivazione di biogas e gas derivante dalla biomassa con la direttiva 2009/73/CE.",
       decreeTitle: "DM 02/03/2018 - (Decreto Biometano)",
       decreeText: "Testo del Decreto",
-      decreeDescription: "Il decreto disciplina la produzione, immissione in rete e incentivazione del biometano.",
+      decreeDescription:
+        "Il decreto disciplina la produzione, immissione in rete e incentivazione del biometano.",
       definitionsTitle: "Definizioni UNI 10458",
       definitions: {
-        biogas: "Biogas: Miscela gassosa prodotta nel processo di digestione anaerobica.",
+        biogas:
+          "Biogas: Miscela gassosa prodotta nel processo di digestione anaerobica.",
         influente: "Influente: Biomassa avviata alla digestione anaerobica.",
-        digestore: "Digestore: Contenitore sigillato dove avviene la digestione anaerobica.",
-        digestato: "Digestato: Biomassa stabilizzata utilizzabile come fertilizzante."
+        digestore:
+          "Digestore: Contenitore sigillato dove avviene la digestione anaerobica.",
+        digestato:
+          "Digestato: Biomassa stabilizzata utilizzabile come fertilizzante.",
       },
       biochemicalProcesses: "Processi biochimici",
-      biochemicalDescription: "I processi di conversione biochimica permettono di ricavare energia dalla materia organica.",
+      biochemicalDescription:
+        "I processi di conversione biochimica permettono di ricavare energia dalla materia organica.",
       processes: {
         hydrolysis: "Fase idrolitica: Scomposizione delle sostanze complesse.",
-        acidogenesis: "Fase acidogenetica: Conversione dei composti semplici in acidi.",
-        methanogenesis: "Fase metanigena: Produzione di metano e anidride carbonica."
+        acidogenesis:
+          "Fase acidogenetica: Conversione dei composti semplici in acidi.",
+        methanogenesis:
+          "Fase metanigena: Produzione di metano e anidride carbonica.",
       },
       biodegradability: "Biodegradabilità",
-      biodegradabilityDescription: "La biodegradabilità anaerobica è valutata con test BMP.",
+      biodegradabilityDescription:
+        "La biodegradabilità anaerobica è valutata con test BMP.",
       chemicalAnalysis: "Analisi chimica",
-      chemicalAnalysisDescription: "L'analisi chimica valuta il potenziale metanigeno di un substrato.",
+      chemicalAnalysisDescription:
+        "L'analisi chimica valuta il potenziale metanigeno di un substrato.",
       bmpStatic: "BMP statico",
-      bmpStaticDescription: "Test di laboratorio per misurare la produzione di biogas.",
+      bmpStaticDescription:
+        "Test di laboratorio per misurare la produzione di biogas.",
       substratesTitle: "Substrati di alimentazione - Prodotti e Sottoprodotti",
-      substratesDescription: "Gli impianti possono essere alimentati con prodotti agricoli e sottoprodotti industriali."
+      substratesDescription:
+        "Gli impianti possono essere alimentati con prodotti agricoli e sottoprodotti industriali.",
     },
-    diet_from:{
-      calculate: 'Calcola',
+    diet_from: {
+      calculate: "Calcola",
     },
     results: {
       title: "Risultati:",
@@ -69,64 +87,154 @@ const messages = {
       E_el: "Energia Elettrica Giornaliera",
       M_ch4_tot: "Metano Totale Necessario",
       M_B_crop: "Massa di Biogas da coltura energetica",
-      M_B_animal: "Massa di Biogas da reflui zootecnici"
+      M_B_animal: "Massa di Biogas da reflui zootecnici",
+    },
+    calculation: {
+      title: "Dimensionamento aziendale",
+      process_title: "Processo di calcolo:",
+      process_description: "L'algoritmo è calibrato su",
+      project_specs: "specifiche di progetto",
+      objective:
+        "con obiettivo finale di produrre un megawatt ora al giorno (commissione progettuale). Saranno quindi utilizzati i parametri riportati nei",
+      tables: "tabulati",
+      power_note: "in cui P = potenza richiesta (commissione progettuale)",
+      methane_calc: "Calcolo del metano totale [M_ch4_tot] necessario:",
+      methane_note:
+        "in cui H1 = potere calorifero inferiore CH4 [kWh/Nm³], n = rendimento elettrico [%]",
+      biogas_estimation:
+        "Stima del Biogas totale [M_B_tot] per la dieta selezionata:",
+      denominator_values: "Valori al Denominatore per la",
+      param: "Parametro",
+      description: "Descrizione",
+      ingredient: "Ingrediente",
+      value: "Valore",
+      unit: "UdM",
+      percentage: "Percentuale di ingrediente",
+    },
+    denominator_table: {
+      title: "Valori al Denominatore per la",
+      param: "Parametro",
+      description: "Descrizione",
+      ingredient: "Ingrediente",
+      value: "Valore",
+      unit: "UdM",
+      percentage: "Percentuale di ingrediente",
+      biogas_potential: "Potenziale prod. Biogas",
+      methane_content: "Volume CH4 nel Biogas",
+    },
+    results_table: {
+      title: "Risultati al Denominatore",
+      parameter: "Parametro",
+      value: "Valore",
+      result: "Risultato",
+      animal_formula: "phi_animal x Pg_animal x C_CH4_animal",
+      crop_formula: "phi_crop x Pg_crop x C_CH4_crop",
+      waste_formula: "phi_waste x Pg_waste x C_CH4_waste",
+      total_denominator: "M_B_tot_denominatore",
+    },
+    biomass: {
+      total_biomass: "La biomassa totale è di {biomass} tonnellate al giorno, rientra nel vincolo di progetto (40 e le 70 tonnellate al giorno). Si procede con il calcolo della superficie coperta dalla coltura dedicata (relativa alla {diet} scelta) e il calcolo dei capi da allevare per ottenere le quantità necessarie alla {diet}.",
+      formula_crop: "M_B_crop = phi_crop x M_B_tot",
+      formula_animal: "M_B_animal = phi_animal x M_B_tot",
+      calc_crop: "M_B_crop = {phi_crop} x {M_B_tot}",
+      calc_animal: "M_B_animal = {phi_animal} x {M_B_tot}",
+      operating_days: "Calcolo dei giorni di funzionamento dell'impianto a Biogas:",
+      note: "NOTA! Il resto dei giorni dell'anno serviranno per la manutenzione dell'impianto e bruciare i gas in eccesso.",
+      torch_description: "Le torce sono necessarie come misura di sicurezza e di tutela ambientale per bruciare eccedenze di biogas.",
+      torch_goal: "Obiettivo: massimizzare la combustione e ridurre il rilascio in atmosfera.",
+      torch_ground_distance: "Distanza minima dal suolo: 4 m.",
+      torch_residence_distance: "Distanza minima da aree abitate: 5 m."
+    },
+    units: {
+      ton_day: "tonn/giorno",
+      days_year: "giorni/anno"
+    },
+    surface_estimation: {
+      intro: "Ora si passa alla stima della superficie da destinare alla coltura energetica:",
+    },
+    livestock_estimation: {
+      intro: "Infine, si stima il numero di capi necessari per ottenere la produzione di refluo zootecnico:",
+    },
+    diet_parameters: {
+      title: "Parametri della Dieta:",
+      param: "Parametro",
+      description: "Descrizione",
+      value: "Valore",
+      unit: "UdM",
+      yield: "Resa Colturale",
+      waste_production: "Produzione di reflui",
+      density: "Densità media refluo",
+      waste_per_head: "Quantità di refluo per capo"
     }
   },
+  /* ************************************ */
+  /* ******  ENGLISH ********************* */
+  /* ************************************ */
   en: {
-    navbar:{
-      home: 'Home',
-      parameters: 'Parameters'
+    navbar: {
+      home: "Home",
+      parameters: "Parameters",
     },
     home: {
-      title: 'Welcome to bioNRG🌳',
-      description: 'Calculate the company sizing for a Biogas plant.',
-      instruction: 'Choose the diet for the Biogas plant, enter the quantities, and get the result along with the calculation process.',
-      learn_more: 'Read more',
-      choose_diet: 'Choose the Diet for your Biogas Plant',
-      composition_limits: 'Composition Limits',
-      calculate: 'Calculate',
+      title: "Welcome to bioNRG🌳",
+      description: "Calculate the company sizing for a Biogas plant.",
+      instruction:
+        "Choose the diet for the Biogas plant, enter the quantities, and get the result along with the calculation process.",
+      learn_more: "Read more",
+      choose_diet: "Choose the Diet for your Biogas Plant",
+      composition_limits: "Composition Limits",
+      calculate: "Calculate",
     },
     biogasInfo: {
       projectTitle: "Project Specifications",
-      projectDescription: "The plant specifications ensure the production of 1 MW (1000 kW) with an average biomass load between 40 and 70 t/day. This key data is used for company sizing. Go to",
+      projectDescription:
+        "The plant specifications ensure the production of 1 MW (1000 kW) with an average biomass load between 40 and 70 t/day. This key data is used for company sizing. Go to",
       tables: "Tables",
-      mapDescription: "Below is the updated 2022 map of methane production plants.",
+      mapDescription:
+        "Below is the updated 2022 map of methane production plants.",
       openMap: "Open the map",
       whatIsBiogas: "What is Biogas?",
-      biogasDescription1: "'Biogas' refers to a natural gas fuel mainly consisting of methane and carbon dioxide.",
-      biogasDescription2: "Biogas is generated through anaerobic digestion of biomass.",
+      biogasDescription1:
+        "'Biogas' refers to a natural gas fuel mainly consisting of methane and carbon dioxide.",
+      biogasDescription2:
+        "Biogas is generated through anaerobic digestion of biomass.",
       biogasHandbook: "Biogas Handbook",
       practiceManual: "Practical Manual",
       legalFramework: "Legal Framework",
       legalDescription: "Biogas incentives began with directive 2009/73/EC.",
       decreeTitle: "DM 02/03/2018 - (Biomethane Decree)",
       decreeText: "Decree Text",
-      decreeDescription: "The decree governs the production, distribution, and incentivization of biomethane.",
+      decreeDescription:
+        "The decree governs the production, distribution, and incentivization of biomethane.",
       definitionsTitle: "UNI 10458 Definitions",
       definitions: {
         biogas: "Biogas: Gas mixture from anaerobic digestion.",
         influente: "Influente: Biomass directed to anaerobic digestion.",
         digestore: "Digestor: Sealed container for anaerobic digestion.",
-        digestato: "Digestate: Stabilized biomass used as fertilizer."
+        digestato: "Digestate: Stabilized biomass used as fertilizer.",
       },
       biochemicalProcesses: "Biochemical Processes",
-      biochemicalDescription: "Biochemical processes extract energy from organic matter.",
+      biochemicalDescription:
+        "Biochemical processes extract energy from organic matter.",
       processes: {
         hydrolysis: "Hydrolysis phase: Breakdown of complex substances.",
         acidogenesis: "Acidogenesis phase: Conversion into acids.",
-        methanogenesis: "Methanogenesis phase: Methane and CO₂ production."
+        methanogenesis: "Methanogenesis phase: Methane and CO₂ production.",
       },
       biodegradability: "Biodegradability",
-      biodegradabilityDescription: "Anaerobic biodegradability is measured using BMP tests.",
+      biodegradabilityDescription:
+        "Anaerobic biodegradability is measured using BMP tests.",
       chemicalAnalysis: "Chemical Analysis",
-      chemicalAnalysisDescription: "Analyzes the substrate’s methane potential.",
+      chemicalAnalysisDescription:
+        "Analyzes the substrate’s methane potential.",
       bmpStatic: "Static BMP",
       bmpStaticDescription: "Lab test to measure biogas production.",
       substratesTitle: "Feedstocks - Products and Byproducts",
-      substratesDescription: "Biogas plants can use both agricultural products and industrial byproducts."
+      substratesDescription:
+        "Biogas plants can use both agricultural products and industrial byproducts.",
     },
-    diet_from:{
-      calculate: 'Calculate',
+    diet_from: {
+      calculate: "Calculate",
     },
     results: {
       title: "Results:",
@@ -140,14 +248,91 @@ const messages = {
       E_el: "Daily Electrical Energy",
       M_ch4_tot: "Total Methane Required",
       M_B_crop: "Biogas from Energy Crops",
-      M_B_animal: "Biogas from Livestock Waste"
+      M_B_animal: "Biogas from Livestock Waste",
+    },
+    calculation: {
+      title: "Business Sizing",
+      process_title: "Calculation Process:",
+      process_description: "The algorithm is calibrated on",
+      project_specs: "project specifications",
+      objective:
+        "with the final goal of producing one megawatt-hour per day (project commission). The parameters listed in the",
+      tables: "tables",
+      power_note: "where P = required power (project commission)",
+      methane_calc: "Calculation of total methane [M_ch4_tot] required:",
+      methane_note:
+        "where H1 = lower calorific value of CH4 [kWh/Nm³], n = electrical efficiency [%]",
+      biogas_estimation:
+        "Estimation of total Biogas [M_B_tot] for the selected diet:",
+      denominator_values: "Denominator values for",
+      param: "Parameter",
+      description: "Description",
+      ingredient: "Ingredient",
+      value: "Value",
+      unit: "Unit",
+      percentage: "Ingredient percentage",
+    },
+    denominator_table: {
+      title: "Denominator Values for",
+      param: "Parameter",
+      description: "Description",
+      ingredient: "Ingredient",
+      value: "Value",
+      unit: "Unit",
+      percentage: "Ingredient Percentage",
+      biogas_potential: "Biogas Production Potential",
+      methane_content: "CH4 Content in Biogas",
+    },
+    results_table: {
+      title: "Denominator Results",
+      parameter: "Parameter",
+      value: "Value",
+      result: "Result",
+      animal_formula: "phi_animal x Pg_animal x C_CH4_animal",
+      crop_formula: "phi_crop x Pg_crop x C_CH4_crop",
+      waste_formula: "phi_waste x Pg_waste x C_CH4_waste",
+      total_denominator: "M_B_tot_denominator"
+    },
+    biomass: {
+      total_biomass: "The total biomass is {biomass} tons per day, within the project constraints (40 to 70 tons per day). The calculation proceeds with the area covered by the dedicated crop (related to the chosen {diet}) and the number of livestock needed to meet the required quantities.",
+      formula_crop: "M_B_crop = phi_crop x M_B_tot",
+      formula_animal: "M_B_animal = phi_animal x M_B_tot",
+      calc_crop: "M_B_crop = {phi_crop} x {M_B_tot}",
+      calc_animal: "M_B_animal = {phi_animal} x {M_B_tot}",
+      operating_days: "Calculation of the Biogas plant operating days:",
+      note: "NOTE! The remaining days of the year will be used for plant maintenance and burning excess gas.",
+      torch_description: "The torches are necessary as a safety and environmental protection measure to burn excess biogas.",
+      torch_goal: "Goal: maximize combustion and reduce atmospheric release.",
+      torch_ground_distance: "Minimum distance from the ground: 4 m.",
+      torch_residence_distance: "Minimum distance from residential areas: 5 m."
+    },
+    units: {
+      ton_day: "tons/day",
+      days_year: "days/year"
+    },
+    surface_estimation: {
+      intro: "Now let's estimate the area to be allocated to energy crops:"
+    },
+    livestock_estimation: {
+      intro: "Finally, the number of livestock required to produce zootechnical waste is estimated:"
+    },
+    diet_parameters: {
+      title: "Diet Parameters:",
+      param: "Parameter",
+      description: "Description",
+      value: "Value",
+      unit: "Unit",
+      yield: "Crop Yield",
+      waste_production: "Waste Production",
+      density: "Average Waste Density",
+      waste_per_head: "Waste per Head"
     }
-  }
+  },
 };
 
 const i18n = createI18n({
-  locale: localStorage.getItem('language') || 'it', // Lingua predefinita
-  fallbackLocale: 'it',
+  locale: localStorage.getItem("language") || "it", // Lingua predefinita
+  fallbackLocale: "it",
   messages,
 });
 
