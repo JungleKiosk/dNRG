@@ -56,6 +56,20 @@ const messages = {
     },
     diet_from:{
       calculate: 'Calcola',
+    },
+    results: {
+      title: "Risultati:",
+      parameter: "Parametro",
+      description: "Descrizione",
+      value: "Valore",
+      unit: "UdM",
+      S_crop: "Superficie coltivata a coltura energetica",
+      A_capi: "Numero di Capi di Bestiame",
+      M_B_tot: "Massa di Biogas Totale",
+      E_el: "Energia Elettrica Giornaliera",
+      M_ch4_tot: "Metano Totale Necessario",
+      M_B_crop: "Massa di Biogas da coltura energetica",
+      M_B_animal: "Massa di Biogas da reflui zootecnici"
     }
   },
   en: {
@@ -113,6 +127,20 @@ const messages = {
     },
     diet_from:{
       calculate: 'Calculate',
+    },
+    results: {
+      title: "Results:",
+      parameter: "Parameter",
+      description: "Description",
+      value: "Value",
+      unit: "Unit",
+      S_crop: "Cultivated Area for Energy Crops",
+      A_capi: "Number of Livestock",
+      M_B_tot: "Total Biogas Mass",
+      E_el: "Daily Electrical Energy",
+      M_ch4_tot: "Total Methane Required",
+      M_B_crop: "Biogas from Energy Crops",
+      M_B_animal: "Biogas from Livestock Waste"
     }
   }
 };
