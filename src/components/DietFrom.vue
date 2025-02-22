@@ -30,7 +30,7 @@ export default {
                         <input type="number" :id="ingrediente" v-model.number="inputValues[ingrediente]"
                             :min="limiti[0]" :max="limiti[1]" required class="form-control" />
                     </div>
-                    <button type="submit" class="btn btn_blulight fw-bold m-3">Calcola</button>
+                    <button type="submit" class="btn btn_blulight fw-bold m-3">{{$t('diet_from.calculate')}}</button>
 
                 </form>
             </div>

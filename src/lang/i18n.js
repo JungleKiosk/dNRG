@@ -53,6 +53,9 @@ const messages = {
       bmpStaticDescription: "Test di laboratorio per misurare la produzione di biogas.",
       substratesTitle: "Substrati di alimentazione - Prodotti e Sottoprodotti",
       substratesDescription: "Gli impianti possono essere alimentati con prodotti agricoli e sottoprodotti industriali."
+    },
+    diet_from:{
+      calculate: 'Calcola',
     }
   },
   en: {
@@ -107,6 +110,9 @@ const messages = {
       bmpStaticDescription: "Lab test to measure biogas production.",
       substratesTitle: "Feedstocks - Products and Byproducts",
       substratesDescription: "Biogas plants can use both agricultural products and industrial byproducts."
+    },
+    diet_from:{
+      calculate: 'Calculate',
     }
   }
 };
