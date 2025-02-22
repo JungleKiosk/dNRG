@@ -65,63 +65,63 @@ export default {
                     <tr>
                         <td>phi_animal</td>
                         <td>{{ $t('denominator_table.percentage') }}</td>
-                        <td>{{ results.debug_info.phi_LS_name }}</td>
+                        <td>{{ $t(`ingredients.${results.debug_info.phi_LS_name}`) }}</td>
                         <td>{{ results.debug_info.phi_LS }}</td>
                         <td>%</td>
                     </tr>
                     <tr>
                         <td>phi_crop</td>
                         <td>{{ $t('denominator_table.percentage') }}</td>
-                        <td>{{ results.debug_info.phi_IT_name }}</td>
+                        <td>{{ $t(`ingredients.${results.debug_info.phi_IT_name}`) }}</td>
                         <td>{{ results.debug_info.phi_IT }}</td>
                         <td>%</td>
                     </tr>
                     <tr>
                         <td>phi_waste</td>
                         <td>{{ $t('denominator_table.percentage') }}</td>
-                        <td>{{ results.debug_info.phi_SF_name }}</td>
+                        <td>{{ $t(`ingredients.${results.debug_info.phi_SF_name}`) }}</td>
                         <td>{{ results.debug_info.phi_SF }}</td>
                         <td>%</td>
                     </tr>
                     <tr>
                         <td>Pg_animal</td>
                         <td>{{ $t('denominator_table.biogas_potential') }}</td>
-                        <td>{{ results.debug_info.phi_LS_name }}</td>
+                        <td>{{ $t(`ingredients.${results.debug_info.phi_LS_name}`) }}</td>
                         <td>{{ results.debug_info.Pg_LS }}</td>
                         <td>Nm³/t</td>
                     </tr>
                     <tr>
                         <td>Pg_crop</td>
                         <td>{{ $t('denominator_table.biogas_potential') }}</td>
-                        <td>{{ results.debug_info.phi_IT_name }}</td>
+                        <td>{{ $t(`ingredients.${results.debug_info.phi_IT_name}`) }}</td>
                         <td>{{ results.debug_info.Pg_IT }}</td>
                         <td>Nm³/t</td>
                     </tr>
                     <tr>
                         <td>Pg_waste</td>
                         <td>{{ $t('denominator_table.biogas_potential') }}</td>
-                        <td>{{ results.debug_info.phi_SF_name }}</td>
+                        <td>{{ $t(`ingredients.${results.debug_info.phi_SF_name}`) }}</td>
                         <td>{{ results.debug_info.Pg_SF }}</td>
                         <td>Nm³/t</td>
                     </tr>
                     <tr>
                         <td>C_CH4_animal</td>
                         <td>{{ $t('denominator_table.methane_content') }}</td>
-                        <td>{{ results.debug_info.phi_LS_name }}</td>
+                        <td>{{ $t(`ingredients.${results.debug_info.phi_LS_name}`) }}</td>
                         <td>{{ results.debug_info.C_CH4_LS }}</td>
                         <td>%</td>
                     </tr>
                     <tr>
                         <td>C_CH4_crop</td>
                         <td>{{ $t('denominator_table.methane_content') }}</td>
-                        <td>{{ results.debug_info.phi_IT_name }}</td>
+                        <td>{{ $t(`ingredients.${results.debug_info.phi_IT_name}`) }}</td>
                         <td>{{ results.debug_info.C_CH4_IT }}</td>
                         <td>%</td>
                     </tr>
                     <tr>
                         <td>C_CH4_waste</td>
                         <td>{{ $t('denominator_table.methane_content') }}</td>
-                        <td>{{ results.debug_info.phi_SF_name }}</td>
+                        <td>{{ $t(`ingredients.${results.debug_info.phi_SF_name}`) }}</td>
                         <td>{{ results.debug_info.C_CH4_SF }}</td>
                         <td>%</td>
                     </tr>
@@ -169,9 +169,9 @@ export default {
         <!-- txt - Risultati al Denominatore -->
         <div class="biomass-calculation">
             <p>
-                {{ $t('biomass.total_biomass')}}
+                {{ $t('biomass.total_biomass') }}
                 <span class="nota">{{ results.M_B_tot }}</span>
-                {{ $t('biomass.total_biomass2')}}
+                {{ $t('biomass.total_biomass2') }}
                 {{ dietaTitle }}
             </p>
 
@@ -224,7 +224,7 @@ export default {
             <p>
                 <strong>S_crop = (M_B_crop x N) / r</strong><br>
                 S_crop = ({{ results.M_B_IT }} x 335) / {{ results.debug_info.resa_IT }} = <span>{{ results.S_IT
-                    }}</span> ha<br><br>
+                }}</span> ha<br><br>
 
                 <strong>A_capi = (M_B_animal x N) / (p_m x ρ x m_c)</strong><br>
                 A_capi = ({{ results.M_B_LS }} x 335) / ({{ results.debug_info.p_m }} x {{ results.debug_info.rho }}

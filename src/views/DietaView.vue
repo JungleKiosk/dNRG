@@ -93,8 +93,11 @@ export default {
                 warning_message,
                 debug_info: {
                     phi_LS,
+                    phi_LS_name: Object.keys(this.dieta)[0],
                     phi_IT,
+                    phi_IT_name: Object.keys(this.dieta)[1],
                     phi_SF,
+                    phi_SF_name: Object.keys(this.dieta)[2],
                     Pg_LS,
                     Pg_IT,
                     Pg_SF,

@@ -122,6 +122,20 @@ const messages = {
       biogas_potential: "Potenziale prod. Biogas",
       methane_content: "Volume CH4 nel Biogas",
     },
+    ingredients: {
+      liquame_bovino: "Liquame Bovino",
+      letame_bovino: "Letame Bovino",
+      liquame_suino: "Liquame Suino",
+      letame_suino: "Letame Suino",
+      insilato_mais: "Insilato di Mais",
+      insilato_sorgo: "Insilato di Sorgo",
+      insilato_triticale: "Insilato di Triticale",
+      bucce_pomodoro: "Bucce di Pomodoro",
+      siero_latte: "Siero di Latte",
+      scarti_frutta: "Scarti di Frutta",
+      sansa_olive: "Sansa di Olive",
+      scarti_patata: "Scarti di Patata"
+    },
     results_table: {
       title: "Risultati al Denominatore",
       parameter: "Parametro",
@@ -187,6 +201,8 @@ const messages = {
       waste_prod: "Prod. del refluo (p_m) [ton/(ha x anno)]",
       live_weight: "Peso vivo (m_c) [ton_pesovivo/capo]",
       biomass_density: "Densità media biomassa (rho) [ton/m³]",
+
+
     }
   },
   /* ************************************ */
@@ -304,6 +320,20 @@ const messages = {
       percentage: "Ingredient Percentage",
       biogas_potential: "Biogas Production Potential",
       methane_content: "CH4 Content in Biogas",
+    },
+    ingredients: {
+      liquame_bovino: "Cattle Slurry",
+      letame_bovino: "Cattle Manure",
+      liquame_suino: "Pig Slurry",
+      letame_suino: "Pig Manure",
+      insilato_mais: "Corn Silage",
+      insilato_sorgo: "Sorghum Silage",
+      insilato_triticale: "Triticale Silage",
+      bucce_pomodoro: "Tomato Peels",
+      siero_latte: "Whey",
+      scarti_frutta: "Fruit Waste",
+      sansa_olive: "Olive Pomace",
+      scarti_patata: "Potato Waste"
     },
     results_table: {
       title: "Denominator Results",
