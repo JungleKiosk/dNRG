@@ -17,6 +17,13 @@ const messages = {
       composition_limits: "Limiti di Composizione",
       calculate: "Calcola",
     },
+    diets: {
+      dieta_a: "Dieta A 🐮🌽🥛",
+      dieta_b: "Dieta B 🐮🌽🥔",
+      dieta_c: "Dieta C 🐷🌽🍅",
+      dieta_d: "Dieta D 🐮🌾🫒",
+      dieta_e: "Dieta E 🐷🌾🍅",
+    },
     biogasInfo: {
       projectTitle: "Specifiche di progetto",
       projectDescription:
@@ -234,6 +241,13 @@ const messages = {
       choose_diet: "Choose the Diet for your Biogas Plant",
       composition_limits: "Composition Limits",
       calculate: "Calculate",
+    },
+    diets: {
+      dieta_a: "Diet A 🐮🌽🥛",
+      dieta_b: "Diet B 🐮🌽🥔",
+      dieta_c: "Diet C 🐷🌽🍅",
+      dieta_d: "Diet D 🐮🌾🫒",
+      dieta_e: "Diet E 🐷🌾🍅",
     },
     biogasInfo: {
       projectTitle: "Project Specifications",

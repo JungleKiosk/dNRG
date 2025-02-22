@@ -114,6 +114,31 @@ export default {
                 <td>185</td>
                 <td>53</td>
               </tr>
+              <tr>
+                <td>{{ $t('ingredients.bucce_pomodoro') }}</td>
+                <td>100</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <td>{{ $t('ingredients.siero_latte') }}</td>
+                <td>30</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>{{ $t('ingredients.scarti_frutta') }}</td>
+                <td>130</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <td>{{ $t('ingredients.sansa_olive') }}</td>
+                <td>200</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <td>{{ $t('ingredients.scarti_patata') }}</td>
+                <td>120</td>
+                <td>57</td>
+              </tr>
             </tbody>
           </table>
         </div>
