@@ -27,36 +27,39 @@ export default {
         <h1 class="display-1">{{ $t('home.title') }}</h1>
         <br>
         <h4>{{ $t('home.description') }}</h4>
-        <h5>Scegli la dieta per l'impianto Biogas, inserisci le quantità e avrai subito il risultato e il relativo processo di calcolo.</h5>
+        <h5>{{ $t('home.instruction') }}</h5>
         <br>
-        <a class="btn btn_blulight" href="#read_more">Scopri di più</a>
+        <a class="btn btn_blulight" href="#read_more">{{ $t('home.learn_more') }}</a>
         <br>
       </div>
       <div class="col-3 col-lg-4">
-        <img class=" rounded-3" src="../assets/img/tunder.svg" alt="">
+        <img class="rounded-3" src="../assets/img/tunder.svg" alt="Thunder Image">
       </div>
     </div>
 
     <div class="row justify-content-center mb-5">
-      <h1 class="mt-5">Scegli la Dieta per il tuo Impianto Biogas</h1>
+      <h1 class="mt-5">{{ $t('home.choose_diet') }}</h1>
 
       <div v-for="(dieta, index) in diete" :key="index" class="col-12 col-lg-4">
         <div class="card card_st p-2 mb-3">
           <h3>{{ dieta.nome }}</h3>
           <ul>
-            <h6>Limiti di Composizione:</h6>
+            <h6>{{ $t('home.composition_limits') }}:</h6>
             <li v-for="(componente, idx) in dieta.componenti" :key="idx">{{ componente }}</li>
           </ul>
           <div class="p-2">
-            <router-link :to="`/dieta/${dieta.slug}`" class="btn btn_blulight fw-bold mt-3">Calcola {{ dieta.nome }}</router-link>
+            <router-link :to="`/dieta/${dieta.slug}`" class="btn btn_blulight fw-bold mt-3">
+              {{ $t('home.calculate') }} {{ dieta.nome }}
+            </router-link>
           </div>
         </div>
       </div>
 
       <BiogasInfo />
-
     </div>
   </div>
 </template>
 
-
+<style scoped>
+/* Aggiungi eventuali stili qui */
+</style>
