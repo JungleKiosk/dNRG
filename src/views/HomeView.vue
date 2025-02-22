@@ -24,9 +24,9 @@ export default {
   <div class="container">
     <div class="row mt-5 justify-content-center">
       <div class="col-12 col-lg-8 p-3">
-        <h1 class="display-1">bioNRG🌳</h1>
+        <h1 class="display-1">{{ $t('home.title') }}</h1>
         <br>
-        <h4>Calcola il dimensionamento aziendale per un impianto a Biogas.</h4>
+        <h4>{{ $t('home.description') }}</h4>
         <h5>Scegli la dieta per l'impianto Biogas, inserisci le quantità e avrai subito il risultato e il relativo processo di calcolo.</h5>
         <br>
         <a class="btn btn_blulight" href="#read_more">Scopri di più</a>

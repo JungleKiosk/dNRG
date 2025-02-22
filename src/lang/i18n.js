@@ -6,8 +6,7 @@ const messages = {
   it: {
     navbar: {
       home: 'Home',
-      about: 'Chi Siamo',
-      contact: 'Contatti',
+      parameters: 'Parametri',
       language: 'Lingua',
     },
     home: {
@@ -22,8 +21,7 @@ const messages = {
   en: {
     navbar: {
       home: 'Home',
-      about: 'About Us',
-      contact: 'Contact',
+      parameters: 'parameters',
       language: 'Language',
     },
     home: {

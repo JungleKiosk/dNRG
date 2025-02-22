@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import './assets/scss/app.scss'
 import App from './App.vue'
 import router from "./router/index.js"
-import i18n from './i18n'; // Importa i18n
+import i18n from './lang/i18n.js'; // Importa i18n
 
 const app = createApp(App)
 app.use(router)
