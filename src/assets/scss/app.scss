@@ -6,11 +6,17 @@
 body.light-mode {
   background-color: $light;
   color: $dark;
+  .nota{
+    background-color: $notalight;
+  }
 }
 
 body.dark-mode {
   background-color: $dark;
   color: $light;
+  .nota{
+    background-color: $notadark;
+  }
 }
 
 body {
@@ -126,3 +132,5 @@ img {
     text-align: center;
   }
 }
+
+

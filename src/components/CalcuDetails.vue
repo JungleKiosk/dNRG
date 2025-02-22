@@ -1,7 +1,7 @@
 <script>
 export default {
     name: "CalculationDetails",
-    props: ["results"],
+    props: ["results"]
 };
 </script>
 
@@ -128,9 +128,6 @@ export default {
                 </tbody>
             </table>
         </div>
-
-
-        <!-- Tabella dei Risultati al Denominatore -->
         <!-- Tabella dei Risultati al Denominatore -->
         <h3 class="mt-5">{{ $t('results_table.title') }}</h3>
         <div class="table-responsive">
@@ -169,12 +166,13 @@ export default {
                 </tbody>
             </table>
         </div>
-
-
+        <!-- txt - Risultati al Denominatore -->
         <div class="biomass-calculation">
             <p>
-                {{ $t('biomass.total_biomass', { biomass: results.debug_info.M_B_tot, diet: results.debug_info.dieta })
-                }}
+                {{ $t('biomass.total_biomass')}}
+                <span class="nota">{{ results.M_B_tot }}</span>
+                {{ $t('biomass.total_biomass2')}}
+                {{ dietaTitle }}
             </p>
 
             <div class="formula_box">
@@ -226,7 +224,7 @@ export default {
             <p>
                 <strong>S_crop = (M_B_crop x N) / r</strong><br>
                 S_crop = ({{ results.M_B_IT }} x 335) / {{ results.debug_info.resa_IT }} = <span>{{ results.S_IT
-                }}</span> ha<br><br>
+                    }}</span> ha<br><br>
 
                 <strong>A_capi = (M_B_animal x N) / (p_m x ρ x m_c)</strong><br>
                 A_capi = ({{ results.M_B_LS }} x 335) / ({{ results.debug_info.p_m }} x {{ results.debug_info.rho }}
@@ -268,25 +266,25 @@ export default {
                                 <tr>
                                     <td>r</td>
                                     <td>{{ $t('diet_parameters.yield') }}</td>
-                                    <td>{{ results.debug_info.resa_IT }}</td>
+                                    <td>{{ results.diet_params.resa_IT }}</td>
                                     <td>ha</td>
                                 </tr>
                                 <tr>
                                     <td>p_m</td>
                                     <td>{{ $t('diet_parameters.waste_production') }}</td>
-                                    <td>{{ results.debug_info.p_m }}</td>
+                                    <td>{{ results.diet_params.p_m }}</td>
                                     <td>ton</td>
                                 </tr>
                                 <tr>
                                     <td>rho</td>
                                     <td>{{ $t('diet_parameters.density') }}</td>
-                                    <td>{{ results.debug_info.rho }}</td>
+                                    <td>{{ results.diet_params.rho }}</td>
                                     <td>ton/m³</td>
                                 </tr>
                                 <tr>
                                     <td>m_c</td>
                                     <td>{{ $t('diet_parameters.waste_per_head') }}</td>
-                                    <td>{{ results.debug_info.m_c }}</td>
+                                    <td>{{ results.diet_params.m_c }}</td>
                                     <td>ton/capo</td>
                                 </tr>
                             </tbody>

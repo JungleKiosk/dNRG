@@ -44,9 +44,12 @@ dNRG/
 │  │  └─ partials/
 │  │     ├─ ColorMode.vue
 │  │     ├─ Footer.vue
+│  │     ├─ LanguageSwitcher.vue
 │  │     └─ Navbar.vue
 │  ├─ data/
 │  │  └─ parameters.js
+│  ├─ lang/
+│  │  └─ i18n.js
 │  ├─ main.js
 │  ├─ router/
 │  │  └─ index.js

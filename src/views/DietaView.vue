@@ -89,6 +89,7 @@ export default {
                 M_B_LS: M_B_LS.toFixed(2),
                 S_IT: S_IT.toFixed(2),
                 A_capi: A_capi.toFixed(2),
+                diet_params,
                 warning_message,
                 debug_info: {
                     phi_LS,

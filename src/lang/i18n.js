@@ -133,7 +133,8 @@ const messages = {
       total_denominator: "M_B_tot_denominatore",
     },
     biomass: {
-      total_biomass: "La biomassa totale è di {biomass} tonnellate al giorno, rientra nel vincolo di progetto (40 e le 70 tonnellate al giorno). Si procede con il calcolo della superficie coperta dalla coltura dedicata (relativa alla {diet} scelta) e il calcolo dei capi da allevare per ottenere le quantità necessarie alla {diet}.",
+      total_biomass: "La biomassa totale è di",
+      total_biomass2: "tonnellate al giorno, rientra nel vincolo di progetto (40 e le 70 tonnellate al giorno). Si procede con il calcolo della superficie coperta dalla coltura dedicata (relativa alla {diet} scelta) e il calcolo dei capi da allevare per ottenere le quantità necessarie alla dieta scelta.",
       formula_crop: "M_B_crop = phi_crop x M_B_tot",
       formula_animal: "M_B_animal = phi_animal x M_B_tot",
       calc_crop: "M_B_crop = {phi_crop} x {M_B_tot}",
@@ -294,7 +295,8 @@ const messages = {
       total_denominator: "M_B_tot_denominator"
     },
     biomass: {
-      total_biomass: "The total biomass is {biomass} tons per day, within the project constraints (40 to 70 tons per day). The calculation proceeds with the area covered by the dedicated crop (related to the chosen {diet}) and the number of livestock needed to meet the required quantities.",
+      total_biomass: "The total biomass is",
+      total_biomass2: "tons per day, falls within the design constraint (40 and 70 tons per day). We proceed with the calculation of the area covered by the dedicated crop (relative to the {diet} chosen) and the calculation of the animals to be raised to obtain the quantities needed for the chosen diet.",
       formula_crop: "M_B_crop = phi_crop x M_B_tot",
       formula_animal: "M_B_animal = phi_animal x M_B_tot",
       calc_crop: "M_B_crop = {phi_crop} x {M_B_tot}",
