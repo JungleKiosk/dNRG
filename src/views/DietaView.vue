@@ -1,20 +1,3 @@
-<template>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 mb-5">
-                <div class="mb-5">
-                    <h1 class="mt-5">{{ dietaTitle }}</h1>
-                    <DietForm :dieta="dieta" @calculate="handleCalculation" />
-                    <DietResult v-if="results" :results="results" />
-                    <CalcuDetails v-if="results" :results="results" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-</template>
-
 <script>
 import DietForm from "../components/DietFrom.vue";
 import DietResult from "../components/DietResults.vue";
@@ -111,6 +94,21 @@ export default {
     },
 };
 </script>
+
+<template>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 mb-5">
+                <div class="mb-5">
+                    <h1 class="mt-5">{{ dietaTitle }}</h1>
+                    <DietForm :dieta="dieta" @calculate="handleCalculation" />
+                    <DietResult v-if="results" :results="results" />
+                    <CalcuDetails v-if="results" :results="results" />
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
 
 <style scoped>
 .alert-warning {
